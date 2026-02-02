@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { clsx } from 'clsx'
 import FilterBar from './FilterBar'
+import { syncApi } from '../api/client'
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
@@ -23,6 +24,26 @@ const navigation = [
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [syncing, setSyncing] = useState(false)
+  const [syncMessage, setSyncMessage] = useState<string | null>(null)
+
+  const handleSync = async () => {
+    if (syncing) return
+    setSyncing(true)
+    setSyncMessage(null)
+    try {
+      const result = await syncApi.triggerSync()
+      if (result?.status === 'already_running') {
+        setSyncMessage('Sync already in progress.')
+      } else {
+        setSyncMessage('Sync started. Refresh in a few minutes.')
+      }
+    } catch (error) {
+      setSyncMessage('Sync failed. Check backend logs.')
+    } finally {
+      setSyncing(false)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -68,11 +89,23 @@ export default function Layout() {
           ))}
         </nav>
 
-        <div className="absolute bottom-4 left-4 right-4">
-          <button className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-lg text-sm font-medium text-slate-600 transition-colors">
-            <RefreshCw className="w-4 h-4" />
-            Sync Data
+        <div className="absolute bottom-4 left-4 right-4 space-y-2">
+          <button
+            className={clsx(
+              "w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+              syncing
+                ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                : "bg-slate-100 hover:bg-slate-200 text-slate-600"
+            )}
+            onClick={handleSync}
+            disabled={syncing}
+          >
+            <RefreshCw className={clsx("w-4 h-4", syncing && "animate-spin")} />
+            {syncing ? 'Syncing...' : 'Sync Data'}
           </button>
+          {syncMessage && (
+            <p className="text-xs text-slate-500 text-center">{syncMessage}</p>
+          )}
         </div>
       </aside>
 
