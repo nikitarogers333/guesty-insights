@@ -43,5 +43,5 @@ export function buildConversationConditions(params: FilterParams) {
 
 export function whereClause(conditions: Prisma.Sql[]) {
   if (conditions.length === 0) return Prisma.sql``;
-  return Prisma.sql`WHERE ${Prisma.join(conditions, Prisma.sql` AND `)}`;
+  return Prisma.sql`WHERE ${Prisma.join(conditions, " AND ")}`;
 }
