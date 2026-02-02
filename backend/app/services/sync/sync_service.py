@@ -155,7 +155,17 @@ def sync_reservations(db: Session, client) -> int:
             # Parse dates
             check_in = datetime.fromisoformat(item["checkIn"].replace("Z", "+00:00")).date()
             check_out = datetime.fromisoformat(item["checkOut"].replace("Z", "+00:00")).date()
-            booked_at = datetime.fromisoformat(item["createdAt"].replace("Z", "+00:00"))
+            created_at_raw = (
+                item.get("createdAt")
+                or item.get("bookedAt")
+                or item.get("confirmedAt")
+                or item.get("created_at")
+            )
+            if created_at_raw:
+                booked_at = datetime.fromisoformat(created_at_raw.replace("Z", "+00:00"))
+            else:
+                # Fallback to check-in date to avoid hard failure
+                booked_at = datetime.combine(check_in, datetime.min.time())
             
             # Calculate fields
             nights = (check_out - check_in).days
