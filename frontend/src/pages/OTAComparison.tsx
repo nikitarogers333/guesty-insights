@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { 
-  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend
+  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer
 } from 'recharts'
 import { analyticsApi } from '../api/client'
 import { useFilterStore } from '../hooks/useFilters'

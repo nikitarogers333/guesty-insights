@@ -10,8 +10,6 @@ import LoadingSpinner from '../components/LoadingSpinner'
 import EmptyState from '../components/EmptyState'
 import type { DayOfWeekData, LeadTimeData, CancellationsData } from '../types/analytics'
 
-const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6']
-
 export default function Patterns() {
   const { getQueryParams } = useFilterStore()
   const params = getQueryParams()
