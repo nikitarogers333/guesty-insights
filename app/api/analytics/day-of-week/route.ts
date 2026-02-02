@@ -4,6 +4,8 @@ import { prisma } from "@/lib/db";
 import { buildReservationConditions, whereClause } from "@/lib/analytics/filters";
 import { parseFilters } from "@/lib/analytics/parse";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   const params = parseFilters(new URL(request.url).searchParams);
   const reservationConditions = buildReservationConditions(params);

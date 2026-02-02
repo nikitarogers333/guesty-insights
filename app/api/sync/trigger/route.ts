@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { runFullSync } from "@/lib/sync/syncService";
 
+export const dynamic = "force-dynamic";
+
 export async function POST() {
   const running = await prisma.syncLog.findFirst({
     where: { status: "running" },
