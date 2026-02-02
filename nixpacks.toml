@@ -1,0 +1,18 @@
+[phases.setup]
+nixPkgs = ["python311", "nodejs_20"]
+
+[phases.install]
+cmds = [
+  "pip install -r backend/requirements.txt",
+  "npm --prefix frontend install"
+]
+
+[phases.build]
+cmds = [
+  "npm --prefix frontend run build",
+  "mkdir -p backend/app/static",
+  "cp -R frontend/dist/* backend/app/static/"
+]
+
+[start]
+cmd = "cd backend && gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:${PORT:-8080}"
