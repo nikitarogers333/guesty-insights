@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Listing {
+  id           String        @id @default(uuid())
+  guestyId     String        @unique @map("guesty_id")
+  name         String
+  bedrooms     Int           @default(0)
+  bathrooms    Int           @default(0)
+  propertyType String?       @map("property_type")
+  active       Boolean       @default(true)
+  address      String?       @db.Text
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  reservations Reservation[]
+  conversations Conversation[]
+
+  @@map("listings")
+}
+
+model Guest {
+  id        String        @id @default(uuid())
+  guestyId  String        @unique @map("guesty_id")
+  emailHash String?       @map("email_hash")
+  createdAt DateTime      @default(now()) @map("created_at")
+  updatedAt DateTime      @updatedAt @map("updated_at")
+
+  reservations Reservation[]
+  conversations Conversation[]
+
+  @@map("guests")
+}
+
+model Reservation {
+  id           String       @id @default(uuid())
+  guestyId     String       @unique @map("guesty_id")
+  listingId    String?      @map("listing_id")
+  guestId      String?      @map("guest_id")
+  source       String
+  status       String
+  checkIn      DateTime     @map("check_in")
+  checkOut     DateTime     @map("check_out")
+  bookedAt     DateTime     @map("booked_at")
+  totalPrice   BigInt       @default(0) @map("total_price")
+  nights       Int          @default(0)
+  leadTimeDays Int          @default(0) @map("lead_time_days")
+  cancelledAt  DateTime?    @map("cancelled_at")
+  createdAt    DateTime     @default(now()) @map("created_at")
+  updatedAt    DateTime     @updatedAt @map("updated_at")
+
+  listing      Listing?     @relation(fields: [listingId], references: [id])
+  guest        Guest?       @relation(fields: [guestId], references: [id])
+  conversation Conversation?
+
+  @@index([source])
+  @@index([checkIn])
+  @@index([bookedAt])
+  @@index([status])
+  @@index([source, status])
+  @@map("reservations")
+}
+
+model Conversation {
+  id                 String       @id @default(uuid())
+  guestyId           String       @unique @map("guesty_id")
+  listingId          String?      @map("listing_id")
+  guestId            String?      @map("guest_id")
+  reservationId      String?      @unique @map("reservation_id")
+  source             String
+  convertedToBooking Boolean      @default(false) @map("converted_to_booking")
+  firstMessageAt     DateTime?    @map("first_message_at")
+  messageCount       Int          @default(0) @map("message_count")
+  createdAt          DateTime     @default(now()) @map("created_at")
+  updatedAt          DateTime     @updatedAt @map("updated_at")
+
+  listing             Listing?    @relation(fields: [listingId], references: [id])
+  guest               Guest?      @relation(fields: [guestId], references: [id])
+  reservation         Reservation? @relation(fields: [reservationId], references: [id])
+
+  @@index([source])
+  @@index([convertedToBooking])
+  @@map("conversations")
+}
+
+model SyncLog {
+  id            Int       @id @default(autoincrement())
+  entityType    String    @map("entity_type")
+  recordsSynced Int       @default(0) @map("records_synced")
+  startedAt     DateTime  @map("started_at")
+  completedAt   DateTime? @map("completed_at")
+  status        String    @default("running")
+  errorMessage  String?   @map("error_message") @db.Text
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  @@map("sync_logs")
+}

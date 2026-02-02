@@ -1,18 +1,11 @@
 [phases.setup]
-nixPkgs = ["python311", "nodejs_20"]
+nixPkgs = ["nodejs_20", "openssl"]
 
 [phases.install]
-cmds = [
-  "python -m pip install -r backend/requirements.txt",
-  "npm --prefix frontend install"
-]
+cmds = ["npm install"]
 
 [phases.build]
-cmds = [
-  "npm --prefix frontend run build",
-  "mkdir -p backend/app/static",
-  "cp -R frontend/dist/* backend/app/static/"
-]
+cmds = ["npx prisma generate", "npm run build"]
 
 [start]
-cmd = "cd backend && gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:${PORT:-8080}"
+cmd = "sh -c \"npx prisma db push && npm run start -- --port ${PORT:-3000}\""
