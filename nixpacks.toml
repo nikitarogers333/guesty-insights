@@ -8,4 +8,4 @@ cmds = ["npm install"]
 cmds = ["npx prisma generate", "npm run build"]
 
 [start]
-cmd = "sh -c \"npx prisma db push && npm run start -- --port ${PORT:-3000}\""
+cmd = "sh -c \"npx prisma db push && HOSTNAME=0.0.0.0 node .next/standalone/server.js\""
