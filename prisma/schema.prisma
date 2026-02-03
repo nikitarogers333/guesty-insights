@@ -57,7 +57,7 @@ model Reservation {
 
   listing      Listing?     @relation(fields: [listingId], references: [id])
   guest        Guest?       @relation(fields: [guestId], references: [id])
-  conversation Conversation?
+  conversations Conversation[]
 
   @@index([source])
   @@index([checkIn])
