@@ -72,7 +72,7 @@ model Conversation {
   guestyId           String       @unique @map("guesty_id")
   listingId          String?      @map("listing_id")
   guestId            String?      @map("guest_id")
-  reservationId      String?      @unique @map("reservation_id")
+  reservationId      String?      @map("reservation_id")
   source             String
   convertedToBooking Boolean      @default(false) @map("converted_to_booking")
   firstMessageAt     DateTime?    @map("first_message_at")

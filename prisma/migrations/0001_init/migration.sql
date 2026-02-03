@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS conversations (
   guesty_id VARCHAR(50) UNIQUE NOT NULL,
   listing_id UUID REFERENCES listings(id),
   guest_id UUID REFERENCES guests(id),
-  reservation_id UUID UNIQUE REFERENCES reservations(id),
+  reservation_id UUID REFERENCES reservations(id),
   source VARCHAR(50) NOT NULL,
   converted_to_booking BOOLEAN DEFAULT FALSE,
   first_message_at TIMESTAMP,
