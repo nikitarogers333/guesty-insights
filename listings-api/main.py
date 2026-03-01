@@ -78,6 +78,25 @@ async def debug_schema():
     return {"columns": [dict(c) for c in cols]}
 
 
+@app.post("/admin/add-address-column")
+async def add_address_column():
+    """Add address column to listings table if it doesn't exist, then return status."""
+    async with pool.acquire() as conn:
+        # Check if column exists
+        exists = await conn.fetchval(
+            "SELECT COUNT(*) FROM information_schema.columns WHERE table_name = 'listings' AND column_name = 'address'"
+        )
+        if exists:
+            # Check how many have data
+            filled = await conn.fetchval("SELECT COUNT(*) FROM listings WHERE address IS NOT NULL AND address != ''")
+            total = await conn.fetchval("SELECT COUNT(*) FROM listings")
+            return {"status": "column_already_exists", "filled": filled, "total": total}
+
+        # Add the column
+        await conn.execute("ALTER TABLE listings ADD COLUMN address TEXT")
+        return {"status": "column_added"}
+
+
 @app.get("/api/analytics/listing-performance")
 async def listing_performance(
     start_date: date = Query(None),
