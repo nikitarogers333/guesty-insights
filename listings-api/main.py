@@ -22,14 +22,32 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DATABASE_URL = os.environ.get("DATABASE_URL", "")
 pool = None
+
+
+def get_database_url():
+    """Build database URL from individual DB_* vars or fall back to DATABASE_URL."""
+    # Try individual variables first (matches existing backend config)
+    db_host = os.environ.get("DB_HOST")
+    db_name = os.environ.get("DB_NAME")
+    db_user = os.environ.get("DB_USER")
+    db_password = os.environ.get("DB_PASSWORD")
+    db_port = os.environ.get("DB_PORT", "5432")
+
+    if db_host and db_name and db_user and db_password:
+        return f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
+
+    # Fall back to DATABASE_URL if set
+    return os.environ.get("DATABASE_URL", "")
 
 
 @app.on_event("startup")
 async def startup():
     global pool
-    pool = await asyncpg.create_pool(DATABASE_URL, min_size=2, max_size=10)
+    database_url = get_database_url()
+    if not database_url:
+        raise RuntimeError("No database configuration found. Set DB_HOST/DB_NAME/DB_USER/DB_PASSWORD or DATABASE_URL")
+    pool = await asyncpg.create_pool(database_url, min_size=2, max_size=10)
 
 
 @app.on_event("shutdown")
