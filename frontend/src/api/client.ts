@@ -9,20 +9,20 @@ export const apiClient = axios.create({
   },
 })
 
-// Analytics API functions
+// Analytics API functions — endpoint names match the deployed backend
 export const analyticsApi = {
   getSummary: async (params: Record<string, string>) => {
-    const { data } = await apiClient.get('/api/analytics/summary', { params })
+    const { data } = await apiClient.get('/api/analytics/overview', { params })
     return data
   },
 
   getBySource: async (params: Record<string, string>) => {
-    const { data } = await apiClient.get('/api/analytics/by-source', { params })
+    const { data } = await apiClient.get('/api/analytics/ota-comparison', { params })
     return data
   },
 
   getTimeSeries: async (params: Record<string, string> & { interval?: string }) => {
-    const { data } = await apiClient.get('/api/analytics/time-series', { params })
+    const { data } = await apiClient.get('/api/analytics/revenue-over-time', { params })
     return data
   },
 
@@ -32,12 +32,12 @@ export const analyticsApi = {
   },
 
   getConversionFunnel: async (params: Record<string, string>) => {
-    const { data } = await apiClient.get('/api/analytics/conversion-funnel', { params })
+    const { data } = await apiClient.get('/api/analytics/conversion', { params })
     return data
   },
 
   getDayOfWeek: async (params: Record<string, string>) => {
-    const { data } = await apiClient.get('/api/analytics/day-of-week', { params })
+    const { data } = await apiClient.get('/api/analytics/booking-patterns', { params })
     return data
   },
 
@@ -52,7 +52,7 @@ export const analyticsApi = {
   },
 
   getListings: async () => {
-    const { data } = await apiClient.get('/api/analytics/listings')
+    const { data } = await apiClient.get('/api/analytics/sources')
     return data
   },
 
