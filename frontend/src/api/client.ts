@@ -47,7 +47,7 @@ export const analyticsApi = {
   },
 
   getListingPerformance: async (params?: Record<string, string>) => {
-    const LISTINGS_API_URL = import.meta.env.VITE_LISTINGS_API_URL || 'https://listings-api-production-f498.up.railway.app'
+    const LISTINGS_API_URL = import.meta.env.VITE_LISTINGS_API_URL || 'https://guesty-insights-production.up.railway.app'
     const { data } = await axios.get(`${LISTINGS_API_URL}/api/analytics/listing-performance`, { params })
     return data
   },
