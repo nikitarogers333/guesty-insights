@@ -69,6 +69,22 @@ async def health():
     return {"status": "healthy", "listings_count": count}
 
 
+@app.get("/api/debug/schema")
+async def debug_schema():
+    """Temporary: return table columns to debug query errors."""
+    async with pool.acquire() as conn:
+        listings_cols = await conn.fetch(
+            "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'listings' ORDER BY ordinal_position"
+        )
+        reservations_cols = await conn.fetch(
+            "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'reservations' ORDER BY ordinal_position"
+        )
+    return {
+        "listings": [{"col": r["column_name"], "type": r["data_type"]} for r in listings_cols],
+        "reservations": [{"col": r["column_name"], "type": r["data_type"]} for r in reservations_cols],
+    }
+
+
 @app.get("/api/analytics/listing-performance")
 async def listing_performance(
     start_date: date = Query(None),
