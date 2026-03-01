@@ -69,22 +69,6 @@ async def health():
     return {"status": "healthy", "listings_count": count}
 
 
-@app.get("/api/debug/schema")
-async def debug_schema():
-    """Temporary: return table columns to debug query errors."""
-    async with pool.acquire() as conn:
-        listings_cols = await conn.fetch(
-            "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'listings' ORDER BY ordinal_position"
-        )
-        reservations_cols = await conn.fetch(
-            "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'reservations' ORDER BY ordinal_position"
-        )
-    return {
-        "listings": [{"col": r["column_name"], "type": r["data_type"]} for r in listings_cols],
-        "reservations": [{"col": r["column_name"], "type": r["data_type"]} for r in reservations_cols],
-    }
-
-
 @app.get("/api/analytics/listing-performance")
 async def listing_performance(
     start_date: date = Query(None),
@@ -120,9 +104,10 @@ async def listing_performance(
         SELECT
             l.id,
             l.name,
-            l.address,
+            l.nickname,
             l.bedrooms,
             l.bathrooms,
+            l.accommodates,
             l.property_type,
             l.active,
             TO_CHAR(r.check_in, 'YYYY-MM') AS month,
@@ -132,8 +117,8 @@ async def listing_performance(
             COALESCE(SUM(r.nights), 0) AS total_nights
         FROM listings l
         LEFT JOIN reservations r ON r.listing_id = l.id AND {where_sql}
-        GROUP BY l.id, l.name, l.address, l.bedrooms, l.bathrooms,
-                 l.property_type, l.active, month, r.source
+        GROUP BY l.id, l.name, l.nickname, l.bedrooms, l.bathrooms,
+                 l.accommodates, l.property_type, l.active, month, r.source
         ORDER BY l.name, month, r.source
     """
 
@@ -148,9 +133,10 @@ async def listing_performance(
             listings_map[lid] = {
                 "id": lid,
                 "name": row["name"],
-                "address": row["address"] or "No address on file",
+                "nickname": row["nickname"] or "",
                 "bedrooms": row["bedrooms"],
                 "bathrooms": row["bathrooms"],
+                "accommodates": row["accommodates"],
                 "property_type": row["property_type"] or "Unknown",
                 "active": row["active"],
                 "total_revenue": 0,
@@ -207,9 +193,10 @@ async def listing_performance(
         result.append({
             "id": listing["id"],
             "name": listing["name"],
-            "address": listing["address"],
+            "nickname": listing["nickname"],
             "bedrooms": listing["bedrooms"],
             "bathrooms": listing["bathrooms"],
+            "accommodates": listing["accommodates"],
             "property_type": listing["property_type"],
             "active": listing["active"],
             "total_revenue": listing["total_revenue"],

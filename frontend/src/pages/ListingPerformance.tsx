@@ -36,9 +36,10 @@ type SortKey = 'revenue' | 'bookings' | 'bedrooms' | 'name'
 interface ListingData {
   id: string
   name: string
-  address: string
+  nickname: string
   bedrooms: number
   bathrooms: number
+  accommodates: number
   property_type: string
   active: boolean
   total_revenue: number
@@ -81,7 +82,7 @@ export default function ListingPerformance() {
     if (search.trim()) {
       const q = search.toLowerCase()
       list = list.filter(l =>
-        l.name.toLowerCase().includes(q) || l.address.toLowerCase().includes(q)
+        l.name.toLowerCase().includes(q) || (l.nickname || '').toLowerCase().includes(q)
       )
     }
     list = [...list].sort((a, b) => {
@@ -141,7 +142,7 @@ export default function ListingPerformance() {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
           <input
             type="text"
-            placeholder="Search by name or address…"
+            placeholder="Search by name or nickname…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -186,7 +187,7 @@ export default function ListingPerformance() {
                   <div className="flex items-center gap-4 mt-1.5 text-xs text-slate-500">
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
-                      <span className="truncate max-w-[300px]">{listing.address}</span>
+                      <span className="truncate max-w-[300px]">{listing.nickname || listing.name}</span>
                     </span>
                     <span className="flex items-center gap-1">
                       <BedDouble className="w-3 h-3" />{listing.bedrooms} bd
