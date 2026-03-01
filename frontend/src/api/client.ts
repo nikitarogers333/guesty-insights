@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || ''
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://backend-production-636b.up.railway.app'
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -47,7 +47,7 @@ export const analyticsApi = {
   },
 
   getListingPerformance: async (params?: Record<string, string>) => {
-    const LISTINGS_API_URL = import.meta.env.VITE_LISTINGS_API_URL || ''
+    const LISTINGS_API_URL = import.meta.env.VITE_LISTINGS_API_URL || 'https://listings-api-production-f498.up.railway.app'
     const { data } = await axios.get(`${LISTINGS_API_URL}/api/analytics/listing-performance`, { params })
     return data
   },
