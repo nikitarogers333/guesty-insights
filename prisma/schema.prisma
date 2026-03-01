@@ -47,10 +47,10 @@ model Reservation {
   status       String
   checkIn      DateTime     @map("check_in")
   checkOut     DateTime     @map("check_out")
-  bookedAt     DateTime     @map("booked_at")
-  totalPrice   BigInt       @default(0) @map("total_price")
-  nights       Int          @default(0)
-  leadTimeDays Int          @default(0) @map("lead_time_days")
+  bookedAt     DateTime?    @map("booked_at")
+  totalPrice   BigInt?      @map("total_price")
+  nights       Int?
+  leadTimeDays Int?         @map("lead_time_days")
   cancelledAt  DateTime?    @map("cancelled_at")
   createdAt    DateTime     @default(now()) @map("created_at")
   updatedAt    DateTime     @updatedAt @map("updated_at")

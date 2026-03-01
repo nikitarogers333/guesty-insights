@@ -48,20 +48,25 @@ async function requestGuesty(
   method: string,
   endpoint: string,
   params?: Record<string, any>,
-  retries = 3
+  retries = 3,
+  allowSkipFallback = true
 ): Promise<GuestyResponse> {
   const token = await getToken();
-  const url = new URL(`${GUESTY_BASE_URL}${endpoint}`);
-  if (params) {
-    Object.entries(params).forEach(([key, value]) => {
-      if (value !== undefined && value !== null) {
-        url.searchParams.set(key, String(value));
-      }
-    });
-  }
+
+  const buildUrl = (currentParams?: Record<string, any>) => {
+    const url = new URL(`${GUESTY_BASE_URL}${endpoint}`);
+    if (currentParams) {
+      Object.entries(currentParams).forEach(([key, value]) => {
+        if (value !== undefined && value !== null) {
+          url.searchParams.set(key, String(value));
+        }
+      });
+    }
+    return url;
+  };
 
   for (let attempt = 0; attempt < retries; attempt += 1) {
-    const response = await fetch(url, {
+    const response = await fetch(buildUrl(params), {
       method,
       headers: {
         Authorization: `Bearer ${token}`,
@@ -85,6 +90,34 @@ async function requestGuesty(
 
     if (!response.ok) {
       const text = await response.text();
+      if (
+        allowSkipFallback &&
+        params?.skip !== undefined &&
+        /skip.*not allowed/i.test(text)
+      ) {
+        const baseParams = { ...params };
+        delete baseParams.skip;
+        const altParamsList: Array<Record<string, any>> = [];
+        const skipValue = Number(params.skip);
+        const limitValue = Number(params.limit);
+        if (Number.isFinite(skipValue) && Number.isFinite(limitValue) && limitValue > 0) {
+          altParamsList.push({ ...baseParams, offset: skipValue });
+          const page = Math.floor(skipValue / limitValue) + 1;
+          altParamsList.push({ ...baseParams, page });
+        }
+        altParamsList.push(baseParams);
+
+        let lastError: Error | null = null;
+        for (const altParams of altParamsList) {
+          try {
+            return await requestGuesty(method, endpoint, altParams, retries, false);
+          } catch (error) {
+            lastError = error as Error;
+          }
+        }
+        throw lastError || new Error(`Guesty request failed: ${response.status} ${text}`);
+      }
+
       throw new Error(`Guesty request failed: ${response.status} ${text}`);
     }
 

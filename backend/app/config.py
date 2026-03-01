@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
     # Database
-    database_url: str = "postgresql://postgres:postgres@localhost:5432/guesty_insights"
+    database_url: str
     
     # Guesty API
     guesty_client_id: str = ""
@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     # API Configuration
     api_port: int = 8000
     api_host: str = "0.0.0.0"
-    cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+    cors_origins: list[str] = []
     
     # Environment
     environment: str = "development"

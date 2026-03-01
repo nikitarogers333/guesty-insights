@@ -22,7 +22,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@db:5432/guesty_insights
+      DATABASE_URL: ${DATABASE_URL}
       GUESTY_CLIENT_ID: ${GUESTY_CLIENT_ID}
       GUESTY_CLIENT_SECRET: ${GUESTY_CLIENT_SECRET}
     ports:
@@ -39,7 +39,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     environment:
-      VITE_API_URL: http://localhost:8000
+      VITE_API_URL: ${VITE_API_URL}
     ports:
       - "5173:5173"
     depends_on:

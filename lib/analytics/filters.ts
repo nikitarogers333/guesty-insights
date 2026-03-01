@@ -10,10 +10,10 @@ export type FilterParams = {
 export function buildReservationConditions(params: FilterParams) {
   const conditions: Prisma.Sql[] = [];
   if (params.startDate) {
-    conditions.push(Prisma.sql`r.check_in >= ${params.startDate}`);
+    conditions.push(Prisma.sql`r.check_in >= ${params.startDate}::date`);
   }
   if (params.endDate) {
-    conditions.push(Prisma.sql`r.check_in <= ${params.endDate}`);
+    conditions.push(Prisma.sql`r.check_in <= ${params.endDate}::date`);
   }
   if (params.source) {
     conditions.push(Prisma.sql`r.source = ${params.source}`);
@@ -27,10 +27,10 @@ export function buildReservationConditions(params: FilterParams) {
 export function buildConversationConditions(params: FilterParams) {
   const conditions: Prisma.Sql[] = [];
   if (params.startDate) {
-    conditions.push(Prisma.sql`c.created_at >= ${params.startDate}`);
+    conditions.push(Prisma.sql`c.created_at >= ${params.startDate}::date`);
   }
   if (params.endDate) {
-    conditions.push(Prisma.sql`c.created_at <= ${params.endDate}`);
+    conditions.push(Prisma.sql`c.created_at <= ${params.endDate}::date`);
   }
   if (params.source) {
     conditions.push(Prisma.sql`c.source = ${params.source}`);
