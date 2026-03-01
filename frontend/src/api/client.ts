@@ -47,9 +47,14 @@ export const analyticsApi = {
   },
 
   getListingPerformance: async (params?: Record<string, string>) => {
-    const LISTINGS_API_URL = import.meta.env.VITE_LISTINGS_API_URL || 'https://guesty-insights-production.up.railway.app'
-    const { data } = await axios.get(`${LISTINGS_API_URL}/api/analytics/listing-performance`, { params })
-    return data
+    // Direct fetch to listings-api — hardcoded to avoid env var issues
+    const url = new URL('https://guesty-insights-production.up.railway.app/api/analytics/listing-performance')
+    if (params) {
+      Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v))
+    }
+    const resp = await fetch(url.toString())
+    if (!resp.ok) throw new Error(`Listings API error: ${resp.status}`)
+    return resp.json()
   },
 
   getListings: async () => {
