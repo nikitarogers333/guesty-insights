@@ -75,19 +75,7 @@ async def debug_schema():
         cols = await conn.fetch(
             "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'listings' ORDER BY ordinal_position"
         )
-        sample = await conn.fetch(
-            "SELECT id, name, address FROM listings WHERE address IS NOT NULL AND address != '' LIMIT 5"
-        )
-        empty_count = await conn.fetchval(
-            "SELECT COUNT(*) FROM listings WHERE address IS NULL OR address = ''"
-        )
-        total = await conn.fetchval("SELECT COUNT(*) FROM listings")
-    return {
-        "columns": [dict(c) for c in cols],
-        "sample_with_address": [dict(s) for s in sample],
-        "empty_address_count": empty_count,
-        "total_listings": total,
-    }
+    return {"columns": [dict(c) for c in cols]}
 
 
 @app.get("/api/analytics/listing-performance")
