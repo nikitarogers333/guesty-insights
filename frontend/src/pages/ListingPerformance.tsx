@@ -1,9 +1,12 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
+import { useQuery } from '@tanstack/react-query'
 import { analyticsApi } from '../api/client'
+import { useFilterStore } from '../hooks/useFilters'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts'
 import { Search, ChevronDown, ChevronUp, Building2, MapPin, BedDouble, Bath, Home, DollarSign, Calendar, TrendingUp } from 'lucide-react'
+import LoadingSpinner from '../components/LoadingSpinner'
 
 const CHANNEL_COLORS: Record<string, string> = {
   airbnb: '#FF5A5F',
@@ -63,19 +66,18 @@ interface APIResponse {
 }
 
 export default function ListingPerformance() {
-  const [data, setData] = useState<APIResponse | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const { getQueryParams } = useFilterStore()
+  const params = getQueryParams()
   const [search, setSearch] = useState('')
   const [sortBy, setSortBy] = useState<SortKey>('revenue')
   const [expandedId, setExpandedId] = useState<string | null>(null)
 
-  useEffect(() => {
-    analyticsApi.getListingPerformance()
-      .then(setData)
-      .catch((e) => setError(e.message || 'Failed to load listing data'))
-      .finally(() => setLoading(false))
-  }, [])
+  const { data, isLoading: loading, error: queryError } = useQuery<APIResponse>({
+    queryKey: ['listingPerformance', params],
+    queryFn: () => analyticsApi.getListingPerformance(params),
+  })
+
+  const error = queryError ? (queryError as Error).message : null
 
   const filtered = useMemo(() => {
     if (!data) return []
@@ -109,8 +111,7 @@ export default function ListingPerformance() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600" />
-        <span className="ml-3 text-slate-500">Loading listings…</span>
+        <LoadingSpinner size="lg" />
       </div>
     )
   }
