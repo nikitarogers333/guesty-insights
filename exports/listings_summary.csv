@@ -1,0 +1,269 @@
+listing_name,address,nickname,property_type,bedrooms,bathrooms,accommodates,active,total_revenue,total_bookings,total_nights,airbnb_total,vrbo_total,booking_com_total,direct_total
+CHI - FUL- 2411C,"160 North Elizabeth Street, Chicago, Illinois 60607, United States",CHI - FUL- 2411C,Apartment,2,2.0,6,True,129896.95,63,223,42128.91,54713.21,29900.33,0.0
+CHI - 411 - C-913,"West Chicago Avenue 411, Chicago, Illinois 60654, United States",CHI - 411 - C-913,Apartment,3,2.5,8,True,128472.53,56,240,58756.75,66062.82,3463.91,189.05
+CHI - FUL - 802 - 3B,"160 North Elizabeth Street , Chicago, Illinois 60607, United States",CHI - FUL - 802 - 3B,Apartment,3,2.0,8,True,114711.24,80,270,83304.05,9174.22,17601.06,4631.91
+DET - CPL - 705,"1145 Griswold Street, Detroit, Michigan 48226, United States",DET - CPL - 705,Apartment,2,2.0,6,True,111830.79,106,338,48765.49,25661.0,24523.34,5640.57
+CHI - FUL - 901,"160 North Elizabeth Street, Chicago, Illinois 60607, United States",CHI - FUL - 901,Apartment,2,2.0,6,True,104998.8,95,341,84696.03,11242.11,8921.22,139.44
+CHI - FUL - 1101,"160 North Elizabeth Street , Chicago, Illinois 60607, United States",CHI - FUL - 1101,Apartment,2,2.0,6,True,95183.02,79,323,86686.01,7252.01,1245.0,0.0
+ARL - OAK 711- 2/2,"Clarendon Boulevard 1550, Arlington, Virginia 22209, United States",ARL - OAK 711- 2/2,Apartment,2,2.0,6,True,86726.0,60,354,33527.85,30825.04,20218.89,1610.7
+CHI - FUL - 2411,"160 North Elizabeth Street, Chicago, Illinois 60607, United States",CHI - FUL - 2411,Apartment,2,2.0,6,True,81387.96,54,261,38624.72,24711.58,13286.13,4765.53
+DET - CPL - 605,"Griswold Street 1145, Detroit, Michigan 48226-1901, United States",DET - CPL - 605,Apartment,2,2.0,6,True,81094.98,96,287,21147.54,31294.93,3542.03,2703.08
+ARL - BAL - 1617,"North Pollard Street 901, Arlington, Virginia 22203, United States",ARL - BAL - 1617,Apartment,2,2.0,6,True,80286.22,58,365,16346.05,27993.15,26815.69,1024.82
+CHI - FUL - 501,"160 North Elizabeth Street, Chicago, Illinois 60607, United States",CHI - FUL - 501,Apartment,2,2.0,6,True,80056.03,64,295,67050.0,6454.14,5581.5,970.39
+DET - CPL - 505,"Griswold Street 1145, Detroit, Michigan 48226-1901, United States",DET - CPL - 505,Apartment,2,2.0,6,True,79507.68,85,284,22145.75,24041.61,14630.21,4025.69
+ARL - OAK 511- 2/2,"Clarendon Boulevard 1550, Arlington, Virginia 22209, United States",ARL - OAK 511- 2/2,Apartment,2,2.0,6,True,77448.61,64,309,11977.26,33121.69,25219.02,3657.88
+ARL - OAK 611 - 2/2,"Clarendon Boulevard 1550, Arlington, Virginia 22209, United States",ARL - OAK 611 - 2/2,Apartment,2,2.0,6,True,75064.68,57,315,10499.09,34545.61,20212.35,2724.5
+CHI - POST - 613,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 613,Other,4,3.0,10,True,74166.44,53,165,13815.66,56400.45,542.08,2115.53
+CHA - KEN - 804 /O,"West 5th Street 425, Charlotte, North Carolina 28202, United States",CHA - KEN - 804 /O,Apartment,3,2.0,8,True,72041.09,88,344,12702.4,24137.99,20431.07,10214.75
+ARL - BAL - 1514,"North Pollard Street 901, Arlington, Virginia 22203, United States",ARL - BAL - 1514,Apartment,2,2.0,6,True,71474.65,65,331,26959.79,24300.48,8727.55,1187.36
+ARL - PEN2 - 1317,"1331 South Eads Street, Arlington, Virginia 22202, United States",ARL - PEN2 - 1317,Apartment,2,2.0,6,True,70079.37,66,331,30576.42,20344.42,11502.71,2658.48
+CHI - POST - 605,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 605,Other,4,3.0,10,True,69331.51,28,213,41432.13,21833.2,2524.91,0.0
+ARL - PEN1 - 1219,"South Eads Street 1221, Arlington, Virginia 22202-4729, United States",ARL - PEN1 - 1219,Apartment,2,2.0,6,True,68952.25,64,310,6197.57,32683.82,23911.98,2221.02
+ARL - OAK 403- 2/2,"Clarendon Boulevard 1550, Arlington, Virginia 22209, United States",ARL - OAK 403- 2/2,Apartment,2,2.0,6,True,67283.75,61,275,15594.43,23075.63,16553.79,4119.79
+DET - DSB - 1202,"Griswold Street 1212, Detroit, Michigan 48226, United States",DET - DSB - 1202,Apartment,2,2.0,6,True,66588.52,82,234,20830.27,19094.0,4116.05,1404.64
+ARL - PEN1 - 1117,"South Eads Street 1221, Arlington, Virginia 22202-4729, United States",ARL - PEN1 - 1117,Apartment,2,2.0,6,True,66322.13,61,323,17872.87,30814.62,12864.87,2587.75
+BAL - ARR - 2703,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 2703,Apartment,2,1.0,6,True,65490.07,91,281,16953.4,26995.06,6431.01,927.32
+ARL - PEN2 - 1017,"1331 South Eads Street, Arlington, Virginia 22202, United States",ARL - PEN2 - 1017,Apartment,2,2.0,6,True,65456.71,49,294,7985.71,31483.31,6799.86,11106.94
+CHA - KEN - 604,"West 5th Street 425, Charlotte, North Carolina 28202, United States",CHA - KEN - 604,Apartment,4,2.0,8,True,64825.91,74,326,17297.22,22059.82,17343.27,2160.81
+CHI - POST - 607,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 607,Other,4,3.0,10,True,62447.02,30,187,32057.89,24835.56,2237.29,0.0
+PIT - ARV - 609,"Liberty Avenue 400, Pittsburgh, Pennsylvania 15222, United States",PIT - ARV - 609,Apartment,2,2.0,6,True,62282.15,65,225,5634.28,28980.01,10052.62,7482.55
+PIT - ARV - 1309,"Liberty Avenue 400, Pittsburgh, Pennsylvania 15222, United States",PIT - ARV - 1309,Apartment,2,2.0,6,True,61733.6,62,241,10823.9,13800.67,22835.91,7659.16
+BAL - ARR - 1902,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 1902,Apartment,2,2.0,6,True,61242.46,75,309,26683.44,0.0,14764.69,232.65
+BAL - ARR - 3002,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 3002,Apartment,2,2.0,6,True,60168.36,68,271,13677.34,17757.72,19930.56,2084.46
+BAL - ARR - 2403,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 2403,Apartment,2,2.0,6,True,59821.33,72,249,3627.76,23205.04,25724.2,3775.22
+ARL - PEN2 - 1018,"1331 South Eads Street, Arlington, Virginia 22202, United States",ARL - PEN2 - 1018,Apartment,2,2.0,6,True,58725.13,55,310,17776.43,7539.96,5328.1,12194.32
+CHA - KEN - 823 /O,"West 5th Street 425, Charlotte, North Carolina 28202, United States",CHA - KEN - 823 /O,Apartment,3,2.0,8,True,56781.29,63,275,16727.55,19348.81,6885.2,257.24
+CHI - POST - 612,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 612,Other,4,3.0,10,True,56263.11,45,156,33973.74,19288.56,758.67,220.89
+ARL - PEN1 - 1019,"South Eads Street 1221, Arlington, Virginia 22202-4729, United States",ARL - PEN1 - 1019,Apartment,2,2.0,6,True,53366.74,44,292,12201.76,3029.8,22390.85,8251.58
+BAL - ARR - 914,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 914,Apartment,1,1.0,4,True,53215.44,66,248,25095.41,0.0,9966.62,1560.98
+CHI - POST - 602,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 602,Other,4,3.0,10,True,51699.24,41,144,25001.56,22639.12,1295.42,871.2
+CHA - KEN - 704,"West 5th Street 425, Charlotte, North Carolina 28202, United States",CHA - KEN - 704,Apartment,4,2.0,8,True,51284.89,52,246,13808.12,6750.18,21489.57,164.02
+CHI - POST - 606,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 606,Other,4,3.0,10,True,49083.45,38,116,27927.15,13862.76,3754.93,825.55
+CHI - NOCA - 517,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 517,Apartment,2,2.0,6,True,46079.44,40,168,19588.6,15621.76,10002.72,866.36
+CHI - NOCA - 527,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 527,Apartment,1,1.0,4,True,44786.7,48,217,21605.17,19857.6,2713.79,610.14
+CHI - NOCA - 606,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 606,Apartment,2,2.0,6,True,42500.93,35,153,8212.29,30633.3,1969.53,183.87
+CHI - POST - 610,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 610,Other,2,2.0,6,True,40453.02,47,145,8067.77,20730.7,5377.07,1118.25
+CHI - POST - 608,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 608,Other,4,3.0,10,True,40447.14,28,109,17764.16,19249.69,801.0,899.82
+CHI - POST - 604,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 604,Other,3,2.0,10,True,40123.12,25,120,11194.61,23668.88,1457.58,0.0
+CHI - POST - 601,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 601,Other,4,3.0,10,True,38488.55,31,113,3550.45,30536.15,0.0,304.8
+CHI - POST - 603,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 603,Other,4,3.0,10,True,36155.88,36,107,17334.01,17437.92,0.0,0.0
+DET - BET - 508 ,"West Bethune Street 1800, Detroit, Michigan 48206, United States",DET - BET - 508 ,Apartment,2,1.0,6,True,34626.05,69,240,12719.21,3944.66,7950.65,95.59
+DET - BET - 408,"West Bethune Street 1800, Detroit, Michigan 48206, United States",DET - BET - 408,Apartment,2,1.0,6,True,30116.17,55,230,4973.47,8857.84,6443.33,1690.41
+DET - BET - 409 ,"West Bethune Street 1800, Detroit, Michigan 48206, United States",DET - BET - 409 ,Apartment,2,1.0,6,True,29975.51,63,206,4267.77,724.7,7956.0,84.53
+CHI - NOCA - 315,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 315,Apartment,1,1.0,4,True,29386.9,33,170,8959.68,10410.89,9907.49,108.84
+CHI - POST - 611,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 611,Other,3,2.0,8,True,26779.62,15,102,12396.02,9538.85,1525.58,3319.17
+CHI - POST - 614,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 614,Other,0,1.0,4,True,25449.84,25,141,10687.13,8447.86,1650.16,924.26
+CHI - NOCA - 524,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 524,Apartment,2,2.0,6,True,24904.57,28,120,12276.05,11269.52,1359.0,0.0
+CHI - POST - 609,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 609,Other,3,2.0,8,True,24205.65,32,90,13279.33,6824.04,994.49,455.35
+DET - DSB - 1207,"Griswold Street 1212, Detroit, Michigan 48226, United States",DET - DSB - 1207,Apartment,3,2.0,6,True,22518.27,21,82,21255.88,1262.39,0.0,0.0
+CHI - NOCA - 216,"2340 North California Avenue, Chicago, Illinois 60647, United States",CHI - NOCA - 216,Apartment,1,1.0,4,True,16347.32,19,117,14249.43,2097.89,0.0,0.0
+BAL - ARR - 907,"Light Street 10, Baltimore, Maryland 21202, United States",BAL - ARR - 907,Apartment,1,1.0,4,True,14072.03,24,88,5728.79,713.67,2109.88,2376.17
+DET - DSB - 1206,"Griswold Street 1212, Detroit, Michigan 48226, United States",DET - DSB - 1206,Apartment,3,2.0,6,True,13173.14,16,42,7203.57,4171.69,610.47,0.0
+CHI - POST - 1003,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 1003,Other,8,6.0,10,True,10845.56,7,48,2184.9,3414.48,0.0,5246.18
+CHI - 2550 - 201,"2550 South Wabash Avenue, Chicago, Illinois 60616, United States",CHI - 2550 - 201,Other,3,2.0,8,True,8985.93,12,53,3777.98,1031.63,1605.8,2412.72
+CHI - 2550 - 502,"2550 South Wabash Avenue, Chicago, Illinois 60616, United States",CHI - 2550 - 502,Other,3,2.0,8,True,8750.51,10,40,4038.88,4474.01,0.0,0.0
+CHI - POST - 902,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 902,Other,4,3.0,10,True,7442.64,8,24,4550.02,1855.69,0.0,1036.93
+CHI - POST - 1005,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 1005,Other,8,6.0,10,True,7432.34,4,40,4739.5,2287.84,405.0,0.0
+CHI - POST - 1013,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 1013,Other,8,6.0,10,True,7353.57,4,36,637.97,6028.12,0.0,0.0
+CHI - 2550 - 207,"2550 South Wabash Avenue, Chicago, Illinois 60616, United States",CHI - 2550 - 207,Other,3,2.0,8,True,5787.87,6,31,4420.23,0.0,1032.77,0.0
+CHI - POST - 807,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 807,Other,8,6.0,10,True,1640.14,3,8,952.66,0.0,0.0,0.0
+PHIL - LOB - TEST,"922 North Broad Street, Philadelphia, Pennsylvania 19130, United States",PHIL - LOB - TEST,Apartment,1,1.0,4,True,1328.88,4,9,430.88,0.0,0.0,898.0
+1405 - 1100,"1405 Point St, Baltimore, MD 21231, USA",1405 - 1100,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+311,"220 West Illinois Street, Chicago, IL 60654, United States",311,Apartment,3,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+4b/3b Gorgeous Executive Home for Your Family,"Elizabeth Court, Upland, CA 91784, United States",4b/3b Gorgeous Executive Home for Your Family,House,4,0.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+AltaK,"331 North Clinton Street, Chicago, IL 60661, United States",AltaK,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Amazing 1BR with Lake & River View,"509 North McClurg Court, Chicago, IL 60611, United States",Amazing 1BR with Lake & River View,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+aParked ET 30/4.5,"1760 North Clark Street, Chicago, IL 60614, United States",aParked ET 30/4.5,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 1004N,"South Eads Street 1600, 22202 Arlington, United States",ARL - CTA - 1004N,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 112S,"South Eads Street 1600, 22202 Arlington, United States",ARL - CTA - 112S,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 115S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 115S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 1215S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 1215S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 121S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 121S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 133S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 133S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 321S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 321S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 335N,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 335N,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 433S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 433S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 710S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 710S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - CTA - 724S,"S Eads St, Arlington, VA 22202, USA",ARL - CTA - 724S,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1203 - 2/2,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1203 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1204 - 2/2,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1204 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1303 - 2/2,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1303 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1304 - 2/2,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1304 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1312 - 2/1,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1312 - 2/1,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - OAK 1403 - 2/2,"1550 Clarendon Blvd, Arlington, VA 22209, USA",ARL - OAK 1403 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ARL - ROSS - TEST,"1788 N Pierce St, Arlington, VA 22209, USA",ARL - ROSS - TEST,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ATL - 505 - TEST,"Edgewood Avenue Northeast 628, 30307 Atlanta, United States",ATL - 505 - TEST,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ATL- GEN- TEST 1,"3172 Roswell Road, Atlanta, Georgia 30305, United States",ATL- GEN- TEST 1,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL -1405 - 1610 2/2,"1405 Point St, Baltimore, MD 21231, USA",BAL -1405 - 1610 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL -1405 - 827-,"1405 Point St, Baltimore, MD 21231, USA",BAL -1405 - 827-,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 1005 1/1,"10 N Calvert St, Baltimore, MD 21202, USA",BAL - EQUI 1005 1/1,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 314 - 2/2,"10 North Calvert Street, Baltimore, MD 21202, United States",BAL - EQUI 314 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 414 - 2/2,"10 North Calvert Street, Baltimore, MD 21202, United States",BAL - EQUI 414 - 2/2,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 415 - ST,"10 N Calvert St, Baltimore, MD 21202, USA",BAL - EQUI 415 - ST,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 514 - 2/2,"10 North Calvert Street, Baltimore, MD 21202, United States",BAL - EQUI 514 - 2/2,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL- EQUI - 710 -2/2,"10 N Calvert St, Baltimore, MD 21202, USA",BAL- EQUI - 710 -2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - EQUI 714 - 2/2,"10 N Calvert St, Baltimore, MD 21202, USA",BAL - EQUI 714 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - HILL - TEST,"611 S Charles St, Baltimore, MD 21230, USA",BAL - HILL - TEST,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - LUM - 1802,"100 E Redwood St, Baltimore, MD 21202, USA",BAL - LUM - 1802,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - LUM - 2202,"100 E Redwood St, Baltimore, MD 21202, USA",BAL - LUM - 2202,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - LUM - 2502,"100 E Redwood St, Baltimore, MD 21202, USA",BAL - LUM - 2502,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+BAL - LUM - PH11,"100 E Redwood St, Baltimore, MD 21202, USA",BAL - LUM - PH11,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Bern 1106,"North Wabash Avenue, Chicago, IL 60611, United States",Bern 1106,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Bern 1504,"North State Street, Chicago, IL 60654, United States",Bern 1504,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Bern 1706,"750 North Wabash Avenue, Chicago, IL 60611, United States",Bern 1706,Condominium,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Bern 2406,"750 North Wabash Avenue, Chicago, IL 60611, United States",Bern 2406,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Bern 4,"54 East Chicago Avenue, Chicago, IL 60611, United States",Bern 4,Condominium,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHA - VUE - 3110,"215 N Pine St, Charlotte, NC 28202, USA",CHA - VUE - 3110,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHA - VUE - 3210,"215 N Pine St, Charlotte, NC 28202, USA",CHA - VUE - 3210,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHA - VUE - 3309,"215 N Pine St, Charlotte, NC 28202, USA",CHA - VUE - 3309,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHA - VUE - 3505,"The Vue, 215 N Pine St, Charlotte, NC 28202, USA",CHA - VUE - 3505,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 20G -2/2,,CHI - 420 - 20G -2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 23E -2/2,"420 East Ohio Street , Chicago, Illinois 60611, United States",CHI - 420 - 23E -2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 25G -3/3,"355 E Ohio St #1508, Chicago, IL 60611, USA",CHI - 420 - 25G -3/3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 25G DUP,"355 E Ohio St UNIT 3608, Chicago, IL 60611, USA",CHI - 420 - 25G DUP,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 32G -3/3,"355 E Ohio St #1508, Chicago, IL 60611, USA",CHI - 420 - 32G -3/3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 32G DUP,"355 E Ohio St UNIT 3608, Chicago, IL 60611, USA",CHI - 420 - 32G DUP,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 37E -3/3,"355 E Ohio St #1508, Chicago, IL 60611, USA",CHI - 420 - 37E -3/3,Apartment,3,0.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 37E DUP,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 37E DUP,Apartment,3,3.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 37G -3/2,"355 E Ohio St #1508, Chicago, IL 60611, USA",CHI - 420 - 37G -3/2,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 37G DUP,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 37G DUP,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 39G -3/3,"420 East Ohio Street, Chicago, IL 60611, United States",CHI - 420 - 39G -3/3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 39G DUP,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 39G DUP,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 40E -3/3,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 40E -3/3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 40E DUP,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 40E DUP,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 40G -3/3,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 40G -3/3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 420 - 40G DUP,"420 E Ohio St, Chicago, IL 60611, USA",CHI - 420 - 40G DUP,Apartment,3,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 808 - 1402,"411 W Chicago Ave #813, Chicago, IL 60302, USA",CHI - 808 - 1402,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - 808 - 2012,"North Hudson Avenue 825, 60610-2978 Chicago, United States",CHI - 808 - 2012,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - ABE - 305,"3 N Aberdeen St, Chicago, IL 60607, USA",CHI - ABE - 305,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - ATW - 4301 - 3,"420 E Ohio St, Chicago, IL 60611, USA",CHI - ATW - 4301 - 3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - EVO - 315-2/2,"1400 W Randolph St, Chicago, IL 60607, USA",CHI - EVO - 315-2/2,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - IWT - 807,"North May Street 670, 60642 Chicago, United States",CHI - IWT - 807,Apartment,3,2.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - MICH -1801-2/2,"South Michigan Avenue 1251, 60605 Chicago, United States",CHI - MICH -1801-2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - MICH -2101-2/2,"South Michigan Avenue 1251, 60605 Chicago, United States",CHI - MICH -2101-2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - NHT 2902 -3/2,"400 East South Water Street, Chicago, IL 60601, USA",CHI - NHT 2902 -3/2,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - NHT 3502 -3/2,"400 East South Water Street, Chicago, IL 60601, USA",CHI - NHT 3502 -3/2,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - NHT 4006 -3/2,"400 East South Water Street, Chicago, IL 60601, USA",CHI - NHT 4006 -3/2,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - NHT 4402 -3/2,"400 East South Water Street, Chicago, IL 60601, USA",CHI - NHT 4402 -3/2,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1006 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1006 - 2/2,Apartment,2,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1202 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1202 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1310 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1310 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1402 - 2/2,"220 West Illinois Street, Chicago, IL 60654, United States",CHI - OAK 1402 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1410 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1410 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1502 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1502 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1610 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1610 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 1706- 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 1706- 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 2102 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 2102 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 2306 - 2/2,"220 West Illinois Street, Chicago, IL 60654, United States",CHI - OAK 2306 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 2310 - 2/2,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 2310 - 2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 2405 - 1/1,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 2405 - 1/1,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 709 - 1/1,"220 W Illinois St, Chicago, IL 60654, USA",CHI - OAK 709 - 1/1,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - OAK 710 - 2/2,"220 West Illinois Street, Chicago, IL 60654, United States",CHI - OAK 710 - 2/2,Apartment,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - PARK - 2702,"730 W Couch Pl, Chicago, IL 60661, USA",CHI - PARK - 2702,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - POST - 4B MULT,"853 W Blackhawk St, Chicago, IL 60642, USA",CHI - POST - 4B MULT,Other,4,3.0,10,True,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - POST - 4BR,"853 W Blackhawk St, Chicago, IL 60642, USA",CHI - POST - 4BR,Apartment,4,3.0,10,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - POST - 912,"853 West Blackhawk Street, Chicago, Illinois 60642, United States",CHI - POST - 912,Other,4,3.0,10,True,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - TEST 1,"S Eads St, Arlington, VA 22202, USA",CHI - TEST 1,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - TEST- HOTEL,"853 W Blackhawk St, Chicago, IL 60642, USA",CHI - TEST- HOTEL,Apartment,4,3.0,10,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - UNION - W508,"939 W Washington Blvd, Chicago, IL 60607, USA",CHI - UNION - W508,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CHI - W77 - 2412 - 3,"77 W Huron St, Chicago, IL 60654, USA",CHI - W77 - 2412 - 3,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+CLAREMONT HOME,"2740 San Angelo Dr, Claremont, CA 91711, USA",CLAREMONT HOME,House,3,2.5,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+CLAREMONT HOUSE,"2740 San Angelo Dr, Claremont, CA 91711, USA",CLAREMONT HOUSE,House,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+Dallas-1B Test,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",Dallas-1B Test,Apartment,1,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+Dallas-2B Test,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",Dallas-2B Test,Apartment,2,1.0,2,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK - 351 -2/2,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK - 351 -2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK 428 -1/1,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK 428 -1/1,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK 536 - 2/2,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK 536 - 2/2,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK - 549 -1/1,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK - 549 -1/1,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK 636 - 2/2,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK 636 - 2/2,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK - 649 -1/1,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK - 649 -1/1,Apartment,1,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+DAL - OAK - 736-2/2,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",DAL - OAK - 736-2/2,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+DET - BET - 308,"West Bethune Street 1800, 48206 Detroit, United States",DET - BET - 308,Apartment,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+DET - BET - 509 ,"West Bethune Street 1800, 48206 Detroit, United States",DET - BET - 509 ,Apartment,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+DET TEST UNIT,"Griswold Street 1212, 48226 Detroit, United States",DET TEST UNIT,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+DET TEST UNIT 2,"United Way Community Services Building, 1212 Griswold St, Detroit, MI 48226, USA",DET TEST UNIT 2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+(dup 1) Oakwood 710,"220 W Illinois St, Chicago, IL 60654, USA",(dup 1) Oakwood 710,Apartment,1,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+(dup 2) Oakwood 710,"220 W Illinois St, Chicago, IL 60654, USA",(dup 2) Oakwood 710,Apartment,1,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+DUP BAL -1405 - 827-,"1405 Point St, Baltimore, MD 21231, USA",DUP BAL -1405 - 827-,Apartment,2,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+Dup DAL - OAK 428 -1/1,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",Dup DAL - OAK 428 -1/1,Apartment,2,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+Dup DAL - OAK - 649 -1/1,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",Dup DAL - OAK - 649 -1/1,Apartment,2,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+Dup DAL - OAK - 736-2/2,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",Dup DAL - OAK - 736-2/2,Apartment,2,2.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+EAS211,"211 East Ohio Street, Chicago, IL 60611, United States",EAS211,Apartment,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ENVITAE | 2BR Breathtaking Views + Pool & Gym (1),"220 West Illinois Street, Chicago, IL 60654, United States",ENVITAE | 2BR Breathtaking Views + Pool & Gym (1),Apartment,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ENVITAE | 2BR Loft in River North | Pool + Gym (2),"220 West Illinois Street, Chicago, IL 60654, United States",ENVITAE | 2BR Loft in River North | Pool + Gym (2),Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ENVITAE | 2BR Loft in River North | Pool + Gym (2),"220 West Illinois Street, Chicago, IL 60654, United States",ENVITAE | 2BR Loft in River North | Pool + Gym (2),Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+ENVITAE | Contemporary 2BR Penthouse + Pool & Gym (1),"220 West Illinois Street, Chicago, IL 60654, United States",ENVITAE | Contemporary 2BR Penthouse + Pool & Gym (1),Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Huge Luxury 3b/3b Sky Loft Huge Views Indoor Pool,"200 East Illinois Street, Chicago, IL 60611, United States",Huge Luxury 3b/3b Sky Loft Huge Views Indoor Pool,Apartment,3,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+HUNT - TEST,"Pacific City Circle 21040, 92648 Huntington Beach, United States",HUNT - TEST,Apartment,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+JC - TEST UNIT 1,"15th Street 315, 07310 Jersey City, United States",JC - TEST UNIT 1,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - CON - 305,"3600 Broadway Blvd, Kansas City, MO 64111, USA",KC - CON - 305,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - CON - 505,"3600 Broadway Blvd, Kansas City, MO 64111, USA",KC - CON - 505,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - LIB - 507,"Baltimore Avenue 1004, Kansas City, Missouri 64105, United States",KC - LIB - 507,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - LIB - 507 - LT,"Baltimore Avenue 1004, 64105 Kansas City, United States",KC - LIB - 507 - LT,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - LIB - 907,"Baltimore Avenue 1004, 64105 Kansas City, United States",KC - LIB - 907,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 102 - 3/2,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 102 - 3/2,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 302 ,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 302 ,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 302 - LT,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 302 - LT,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 410,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 410,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 410 - LT,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 410 - LT,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 418 2/2,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 418 2/2,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+KC - STU - 503 - 3/2,"2121 Central St, Kansas City, MO 64108, USA",KC - STU - 503 - 3/2,Apartment,3,2.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+LA - ARTIST LOFT,"1920 N Main St, Los Angeles, CA 90031, USA",LA - ARTIST LOFT,House,2,1.0,6,True,0.0,0,0,0.0,0.0,0.0,0.0
+LA - Loft B5,"1920 N Main St, Los Angeles, CA 90031, USA",LA - Loft B5,House,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LA - Loft B5 # 2,"1920 N Main St, Los Angeles, CA 90031, USA",LA - Loft B5 # 2,House,1,0.0,6,True,0.0,0,0,0.0,0.0,0.0,0.0
+LA TEST UNIT 2,"314 N Chicago St, Los Angeles, CA 90033, USA",LA TEST UNIT 2,House,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LBC - Test 1,"1310 E Ocean Blvd, Long Beach, CA 90802, USA",LBC - Test 1,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LBC - Test 2,"1310 E Ocean Blvd, Long Beach, CA 90802, USA",LBC - Test 2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - LBC-1411 -2/2,"East Ocean Boulevard, Long Beach, CA 90802, United States",LB - LBC-1411 -2/2,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - LBC-1411 - NEW,"E Ocean Blvd, Long Beach, CA 90802, USA",LB - LBC-1411 - NEW,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - LBC-1502,"East Ocean Boulevard, Long Beach, CA 90802, United States",LB - LBC-1502,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - TEMP 1,"150 W Ocean Blvd, Long Beach, CA 90802, USA",LB - TEMP 1,Apartment,2,0.0,2,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - TEMP 2,"150 W Ocean Blvd, Long Beach, CA 90802, USA",LB - TEMP 2,Apartment,2,0.0,2,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - TEMP 3,"149 W Ocean Blvd, Long Beach, CA 90802, USA",LB - TEMP 3,Apartment,2,0.0,2,False,0.0,0,0,0.0,0.0,0.0,0.0
+LB - TEMP 4,"151 W Ocean Blvd, Long Beach, CA 90802, USA",LB - TEMP 4,Apartment,2,0.0,2,False,0.0,0,0,0.0,0.0,0.0,0.0
+Linea1 V2,"215 W Lake St, Chicago, IL 60606, USA",Linea1 V2,Apartment,1,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Linea2,"215 w Lake St. #2910, Chicago, IL 60606, United States",Linea2,Apartment,3,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Linea2 V2,"215 W Lake St #2910, Chicago, IL 60606, USA",Linea2 V2,Apartment,1,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+MIA - FILL - TEST,"1657 N Miami Ave, Miami, FL 33136, USA",MIA - FILL - TEST,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+OAK MULTI (Master),"220 W Illinois St, Chicago, IL 60654, USA",OAK MULTI (Master),Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Ocean Front 3b/2b Huge Balcony Right on the Sand,"The Strand, Manhattan Beach, CA 90266, United States",Ocean Front 3b/2b Huge Balcony Right on the Sand,Apartment,3,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+OLD-OAK 1202,"220 West Illinois Street, Chicago, IL 60654, United States",OLD-OAK 1202,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+OLD--OAK 709,"220 W Illinois St, Chicago, IL 60654, USA",OLD--OAK 709,Apartment,1,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+OLD-- OAK DALLAS 536,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",OLD-- OAK DALLAS 536,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+OLD --OAK DALLAS 636,"2901 Cityplace W Blvd, Dallas, TX 75204, USA",OLD --OAK DALLAS 636,Apartment,2,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+Old Opt 3807,"North Saint Clair Street, Chicago, IL 60611, United States",Old Opt 3807,Apartment,3,0.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+Opt 3901,"200 E Illinois St, Chicago, IL 60611, USA",Opt 3901,Apartment,3,0.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+Paradis,"2753 Paradise Street, Pomona, CA 91767, United States",Paradis,House,5,0.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+PIT - CORK - 1410,"Armstrong Cork Factory - Warehouse Building, 2359 Railroad St, Pittsburgh, PA 15222, USA",PIT - CORK - 1410,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+PIT - CORK - 1610,"Armstrong Cork Factory - Warehouse Building, 2359 Railroad St, Pittsburgh, PA 15222, USA",PIT - CORK - 1610,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+PIT - CORK - 2412,"Armstrong Cork Factory - Warehouse Building, 2359 Railroad St, Pittsburgh, PA 15222, USA",PIT - CORK - 2412,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+PIT - CORK - 2512,"Armstrong Cork Factory - Warehouse Building, 2359 Railroad St, Pittsburgh, PA 15222, USA",PIT - CORK - 2512,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+PIT - CORK - 2612,"Armstrong Cork Factory - Warehouse Building, 2359 Railroad St, Pittsburgh, PA 15222, USA",PIT - CORK - 2612,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+SBN - STJ - TEST 1,"307 East Lasalle Avenue, South Bend, Indiana 46617, United States",SBN - STJ - TEST 1,Apartment,2,1.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+Sienna,"423 E Ohio St, Chicago, IL 60611, USA",Sienna,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+SLC - REG - 307,"South 600 East 33, 84102-1000 Salt Lake City, United States",SLC - REG - 307,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+SLC - REG - 407,"33 S 600 E, Salt Lake City, UT 84102, USA",SLC - REG - 407,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+SLC - REG - 507,"33 S 600 E, Salt Lake City, UT 84102, USA",SLC - REG - 507,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+SLC - REG - 525,"33 S 600 E, Salt Lake City, UT 84102, USA",SLC - REG - 525,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+TEST - DC 2,"1630 Columbia Rd NW, Washington, DC 20009, USA",TEST - DC 2,Apartment,2,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+TEST - LV - 1,"Campaign Place, 211 N 8th St, Las Vegas, NV 89101, USA",TEST - LV - 1,Apartment,2,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+TEST - MADISON 1,"5601 Fraser Circle, Madison, Wisconsin 53718, United States",TEST - MADISON 1,Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+TEST - NY - 1,"112 E 74th St, New York, NY 10021, USA",TEST - NY - 1,Apartment,2,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+WES220 (1),"220 West Illinois Street, Chicago, IL 60654, United States",WES220 (1),Apartment,2,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+x2b/2b Great Views from Old Town,"North Clark Street, Chicago, IL 60614, United States",x2b/2b Great Views from Old Town,Apartment,2,2.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+xAmazing Lake  River View Apartment,"355 East Grand Avenue, Chicago, IL 60611, United States",xAmazing Lake  River View Apartment,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+xLuxury 2b/2b Balcony Huge Views,"West Fulton Street, Chicago, IL 60661, United States",xLuxury 2b/2b Balcony Huge Views,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+xx3 test,"Chicago, IL 60601, United States",xx3 test,Apartment,1,2.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+y2b/2b  Huge Indoor Pool Roof Deck,"West Wacker Drive, Chicago, IL 60601, United States",y2b/2b  Huge Indoor Pool Roof Deck,Apartment,2,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+z1b/1b 20th Floor Luxury @Navy Pier,"526 North Peshtigo Court, Chicago, IL 60611, United States",z1b/1b 20th Floor Luxury @Navy Pier,Apartment,1,0.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+z2b/2b Amazing Apartment!,"North Harbor Tower, 175 North Harbor Drive, Chicago, IL 60601, United States",z2b/2b Amazing Apartment!,Apartment,3,0.0,7,False,0.0,0,0,0.0,0.0,0.0,0.0
+z2b/2b Best place to stay in Chicago,"35 West Wacker Drive, Chicago, IL 60601, United States",z2b/2b Best place to stay in Chicago,Serviced apartment,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+z2b/2b Super Luxury in Best Building,"500 North Saint Clair Street, Chicago, IL 60611, United States",z2b/2b Super Luxury in Best Building,Cave,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+z2b/2b Super Stay,"441 West Erie Street, Chicago, IL 60654, United States",z2b/2b Super Stay,Condominium,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+z2b/2b Sweet digs,"55 West Wacker Drive, Chicago, IL 60601, United States",z2b/2b Sweet digs,Island,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
+z3B/3B Uber Lux SuperBowl HQ Corner,"One Rincon Hill, 425 1st Street, San Francisco, CA 94105, United States",z3B/3B Uber Lux SuperBowl HQ Corner,Apartment,1,3.0,8,False,0.0,0,0,0.0,0.0,0.0,0.0
+zSpring in LES from $595/nt Huge1/1,"167 Eldridge St 3b, New York, NY 10002, United States",zSpring in LES from $595/nt Huge1/1,Apartment,1,0.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+zz,"121 Norfolk St 2nd floor, New York, NY 10002, United States",zz,Apartment,1,1.0,4,False,0.0,0,0,0.0,0.0,0.0,0.0
+zz,"Ludlow St 4F, New York, NY 10002, United States",zz,Apartment,1,1.0,5,False,0.0,0,0,0.0,0.0,0.0,0.0
+zz,"350 W 42nd St 11J, New York, NY 10036, United States",zz,Apartment,1,1.0,3,False,0.0,0,0,0.0,0.0,0.0,0.0
+Рядом Экспоцентр 100м евроремонт,"Krasnopresnenskaya naberezhnaya, 2/1, Moscow, 123100, Russia",Рядом Экспоцентр 100м евроремонт,Apartment,1,0.0,6,False,0.0,0,0,0.0,0.0,0.0,0.0
