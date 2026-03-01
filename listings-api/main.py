@@ -69,6 +69,27 @@ async def health():
     return {"status": "healthy", "listings_count": count}
 
 
+@app.get("/debug/schema")
+async def debug_schema():
+    async with pool.acquire() as conn:
+        cols = await conn.fetch(
+            "SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'listings' ORDER BY ordinal_position"
+        )
+        sample = await conn.fetch(
+            "SELECT id, name, address FROM listings WHERE address IS NOT NULL AND address != '' LIMIT 5"
+        )
+        empty_count = await conn.fetchval(
+            "SELECT COUNT(*) FROM listings WHERE address IS NULL OR address = ''"
+        )
+        total = await conn.fetchval("SELECT COUNT(*) FROM listings")
+    return {
+        "columns": [dict(c) for c in cols],
+        "sample_with_address": [dict(s) for s in sample],
+        "empty_address_count": empty_count,
+        "total_listings": total,
+    }
+
+
 @app.get("/api/analytics/listing-performance")
 async def listing_performance(
     start_date: date = Query(None),
