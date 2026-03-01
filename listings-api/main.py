@@ -5,6 +5,7 @@ the /api/analytics/listing-performance endpoint.
 """
 
 import os
+import httpx
 from collections import defaultdict
 from datetime import date
 
@@ -95,6 +96,87 @@ async def add_address_column():
         # Add the column
         await conn.execute("ALTER TABLE listings ADD COLUMN address TEXT")
         return {"status": "column_added"}
+
+
+@app.post("/admin/sync-addresses")
+async def sync_addresses_from_guesty():
+    """
+    One-time endpoint: fetch all listings from Guesty API, extract addresses,
+    and update the local database.
+    """
+    client_id = os.environ.get("GUESTY_CLIENT_ID", "")
+    client_secret = os.environ.get("GUESTY_CLIENT_SECRET", "")
+
+    if not client_id or not client_secret:
+        return {"error": "GUESTY_CLIENT_ID and GUESTY_CLIENT_SECRET env vars required"}
+
+    # Step 1: Get OAuth token from Guesty
+    async with httpx.AsyncClient(timeout=30) as http:
+        token_resp = await http.post(
+            "https://open-api.guesty.com/oauth2/token",
+            json={
+                "grant_type": "client_credentials",
+                "scope": "open-api",
+                "client_id": client_id,
+                "client_secret": client_secret,
+            },
+        )
+        if token_resp.status_code != 200:
+            return {"error": f"Guesty auth failed: {token_resp.status_code}", "body": token_resp.text}
+
+        access_token = token_resp.json().get("access_token")
+
+        # Step 2: Fetch all listings from Guesty (paginated)
+        all_listings = []
+        skip = 0
+        limit = 100
+        while True:
+            resp = await http.get(
+                "https://open-api.guesty.com/v1/listings",
+                params={"skip": skip, "limit": limit, "fields": "title nickname address _id"},
+                headers={"Authorization": f"Bearer {access_token}"},
+            )
+            if resp.status_code != 200:
+                return {"error": f"Guesty listings fetch failed: {resp.status_code}", "body": resp.text}
+
+            data = resp.json()
+            results = data.get("results", [])
+            all_listings.extend(results)
+
+            if len(results) < limit:
+                break
+            skip += limit
+
+    # Step 3: Update addresses in database
+    updated = 0
+    not_found = 0
+    async with pool.acquire() as conn:
+        for item in all_listings:
+            guesty_id = item.get("_id", "")
+            address_obj = item.get("address", {})
+            if isinstance(address_obj, dict):
+                full_address = address_obj.get("full", "")
+            else:
+                full_address = str(address_obj) if address_obj else ""
+
+            if not full_address or not guesty_id:
+                continue
+
+            result = await conn.execute(
+                "UPDATE listings SET address = $1 WHERE guesty_id = $2 AND (address IS NULL OR address = '')",
+                full_address, guesty_id,
+            )
+            if "UPDATE 1" in result:
+                updated += 1
+            else:
+                not_found += 1
+
+    return {
+        "status": "complete",
+        "guesty_listings_fetched": len(all_listings),
+        "addresses_updated": updated,
+        "skipped_or_not_found": not_found,
+    }
 
 
 @app.get("/api/analytics/listing-performance")
