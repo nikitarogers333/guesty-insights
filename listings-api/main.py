@@ -114,12 +114,13 @@ async def sync_addresses_from_guesty():
     async with httpx.AsyncClient(timeout=30) as http:
         token_resp = await http.post(
             "https://open-api.guesty.com/oauth2/token",
-            json={
+            data={
                 "grant_type": "client_credentials",
                 "scope": "open-api",
                 "client_id": client_id,
                 "client_secret": client_secret,
             },
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
         )
         if token_resp.status_code != 200:
             return {"error": f"Guesty auth failed: {token_resp.status_code}", "body": token_resp.text}
