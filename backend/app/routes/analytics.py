@@ -333,6 +333,111 @@ async def get_cancellations(
     }
 
 
+@router.get("/listing-performance")
+async def get_listing_performance(
+    db: Session = Depends(get_db),
+):
+    """Get per-listing revenue breakdown by month and booking channel."""
+    # Get all active listings with their details
+    listings = db.query(Listing).filter(Listing.active == True).all()
+
+    # Get monthly revenue by listing and source for confirmed bookings
+    monthly_data = db.query(
+        Reservation.listing_id,
+        Reservation.source,
+        func.date_trunc('month', Reservation.check_in).label('month'),
+        func.count(Reservation.id).label('bookings'),
+        func.coalesce(func.sum(Reservation.total_price), 0).label('revenue'),
+        func.coalesce(func.sum(Reservation.nights), 0).label('nights'),
+    ).filter(
+        Reservation.status != 'cancelled',
+        Reservation.listing_id.isnot(None),
+    ).group_by(
+        Reservation.listing_id,
+        Reservation.source,
+        func.date_trunc('month', Reservation.check_in),
+    ).all()
+
+    # Build lookup: listing_id -> { month -> { source -> {bookings, revenue, nights} } }
+    from collections import defaultdict
+    listing_months = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {"bookings": 0, "revenue": 0, "nights": 0})))
+
+    all_months = set()
+    all_sources = set()
+
+    for row in monthly_data:
+        month_str = row.month.strftime("%Y-%m")
+        all_months.add(month_str)
+        all_sources.add(row.source)
+        entry = listing_months[row.listing_id][month_str][row.source]
+        entry["bookings"] += row.bookings
+        entry["revenue"] += int(row.revenue)
+        entry["nights"] += int(row.nights)
+
+    sorted_months = sorted(all_months)
+    sorted_sources = sorted(all_sources)
+
+    # Build response
+    results = []
+    for listing in listings:
+        months_data = listing_months.get(listing.id, {})
+
+        # Total revenue across all months
+        total_revenue = 0
+        total_bookings = 0
+        total_nights = 0
+
+        monthly = []
+        for month in sorted_months:
+            month_sources = months_data.get(month, {})
+            month_total_revenue = 0
+            month_total_bookings = 0
+            by_source = {}
+            for source in sorted_sources:
+                s_data = month_sources.get(source, {"bookings": 0, "revenue": 0, "nights": 0})
+                by_source[source] = {
+                    "bookings": s_data["bookings"],
+                    "revenue": s_data["revenue"],
+                }
+                month_total_revenue += s_data["revenue"]
+                month_total_bookings += s_data["bookings"]
+                total_nights += s_data["nights"]
+
+            total_revenue += month_total_revenue
+            total_bookings += month_total_bookings
+
+            # Only include months where this listing had activity
+            if month_total_bookings > 0:
+                monthly.append({
+                    "month": month,
+                    "total_revenue": month_total_revenue,
+                    "total_bookings": month_total_bookings,
+                    "by_source": by_source,
+                })
+
+        results.append({
+            "id": listing.id,
+            "name": listing.name,
+            "address": listing.address,
+            "bedrooms": listing.bedrooms,
+            "bathrooms": listing.bathrooms,
+            "property_type": listing.property_type,
+            "total_revenue": total_revenue,
+            "total_bookings": total_bookings,
+            "total_nights": total_nights,
+            "months": monthly,
+        })
+
+    # Sort by total revenue descending
+    results.sort(key=lambda x: x["total_revenue"], reverse=True)
+
+    return {
+        "listings": results,
+        "all_months": sorted_months,
+        "all_sources": sorted_sources,
+    }
+
+
 @router.get("/listings")
 async def get_listings(db: Session = Depends(get_db)):
     """Get list of available listings."""

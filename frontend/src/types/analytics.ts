@@ -75,6 +75,37 @@ export interface Listing {
   name: string
 }
 
+export interface ListingMonthSourceData {
+  bookings: number
+  revenue: number
+}
+
+export interface ListingMonth {
+  month: string
+  total_revenue: number
+  total_bookings: number
+  by_source: Record<string, ListingMonthSourceData>
+}
+
+export interface ListingPerformanceItem {
+  id: string
+  name: string
+  address: string | null
+  bedrooms: number
+  bathrooms: number
+  property_type: string | null
+  total_revenue: number
+  total_bookings: number
+  total_nights: number
+  months: ListingMonth[]
+}
+
+export interface ListingPerformanceData {
+  listings: ListingPerformanceItem[]
+  all_months: string[]
+  all_sources: string[]
+}
+
 export interface ListingsData {
   listings: Listing[]
 }

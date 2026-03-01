@@ -46,6 +46,11 @@ export const analyticsApi = {
     return data
   },
 
+  getListingPerformance: async () => {
+    const { data } = await apiClient.get('/api/analytics/listing-performance')
+    return data
+  },
+
   getListings: async () => {
     const { data } = await apiClient.get('/api/analytics/listings')
     return data

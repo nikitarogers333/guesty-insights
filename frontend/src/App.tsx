@@ -5,6 +5,7 @@ import OTAComparison from './pages/OTAComparison'
 import Revenue from './pages/Revenue'
 import Conversion from './pages/Conversion'
 import Patterns from './pages/Patterns'
+import ListingPerformance from './pages/ListingPerformance'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="revenue" element={<Revenue />} />
         <Route path="conversion" element={<Conversion />} />
         <Route path="patterns" element={<Patterns />} />
+        <Route path="listings" element={<ListingPerformance />} />
       </Route>
     </Routes>
   )

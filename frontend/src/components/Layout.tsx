@@ -6,6 +6,7 @@ import {
   DollarSign, 
   GitBranch, 
   Calendar,
+  Building2,
   Menu,
   X,
   RefreshCw
@@ -20,6 +21,7 @@ const navigation = [
   { name: 'Revenue', href: '/revenue', icon: DollarSign },
   { name: 'Conversion', href: '/conversion', icon: GitBranch },
   { name: 'Patterns', href: '/patterns', icon: Calendar },
+  { name: 'Listings', href: '/listings', icon: Building2 },
 ]
 
 export default function Layout() {
