@@ -133,6 +133,7 @@ async def listing_performance(
             l.id,
             l.name,
             l.nickname,
+            COALESCE(l.address, '') AS address,
             l.bedrooms,
             l.bathrooms,
             l.accommodates,
@@ -145,7 +146,7 @@ async def listing_performance(
             COALESCE(SUM(r.nights), 0) AS total_nights
         FROM listings l
         LEFT JOIN reservations r ON r.listing_id = l.id AND {where_sql}
-        GROUP BY l.id, l.name, l.nickname, l.bedrooms, l.bathrooms,
+        GROUP BY l.id, l.name, l.nickname, l.address, l.bedrooms, l.bathrooms,
                  l.accommodates, l.property_type, l.active, month, r.source
         ORDER BY l.name, month, r.source
     """
@@ -162,6 +163,7 @@ async def listing_performance(
                 "id": lid,
                 "name": row["name"],
                 "nickname": row["nickname"] or "",
+                "address": row["address"] or "",
                 "bedrooms": row["bedrooms"],
                 "bathrooms": row["bathrooms"],
                 "accommodates": row["accommodates"],
@@ -222,6 +224,7 @@ async def listing_performance(
             "id": listing["id"],
             "name": listing["name"],
             "nickname": listing["nickname"],
+            "address": listing["address"],
             "bedrooms": listing["bedrooms"],
             "bathrooms": listing["bathrooms"],
             "accommodates": listing["accommodates"],

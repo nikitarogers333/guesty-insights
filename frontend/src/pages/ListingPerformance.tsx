@@ -37,6 +37,7 @@ interface ListingData {
   id: string
   name: string
   nickname: string
+  address: string
   bedrooms: number
   bathrooms: number
   accommodates: number
@@ -82,7 +83,7 @@ export default function ListingPerformance() {
     if (search.trim()) {
       const q = search.toLowerCase()
       list = list.filter(l =>
-        l.name.toLowerCase().includes(q) || (l.nickname || '').toLowerCase().includes(q)
+        l.name.toLowerCase().includes(q) || (l.nickname || '').toLowerCase().includes(q) || (l.address || '').toLowerCase().includes(q)
       )
     }
     list = [...list].sort((a, b) => {
@@ -187,7 +188,7 @@ export default function ListingPerformance() {
                   <div className="flex items-center gap-4 mt-1.5 text-xs text-slate-500">
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
-                      <span className="truncate max-w-[300px]">{listing.nickname || listing.name}</span>
+                      <span className="truncate max-w-[300px]">{listing.address || listing.nickname || listing.name}</span>
                     </span>
                     <span className="flex items-center gap-1">
                       <BedDouble className="w-3 h-3" />{listing.bedrooms} bd
